@@ -1,0 +1,24 @@
+import elementos.*
+import atleta.*
+import disciplinas.*
+
+
+describe "test de escenarios propuesto en el dominio para atletas" {
+  test "el presupuesto propio del atleta es de 40" {
+    assert.equals(40, victoria.presupuesto_propio())
+  }
+  test "victoria se quiere parecer a paretto" {
+    victoria.altura(150)
+    victoria.cambiar_disciplina(judo)
+    victoria.cambiar_elemento(traje)
+    victoria.cambiar_entrenadores(4)
+    assert.equals(7500, victoria.presupuesto())
+  }
+  test "victoria se quiere parecer a delpo elongando" {
+        victoria.altura(210)
+        victoria.cambiar_disciplina(tenis)
+        victoria.cambiar_elemento(raqueta)
+        victoria.cambiar_entrenadores(2)
+        assert.equals(20+215+2200, victoria.presupuesto())
+  }
+}

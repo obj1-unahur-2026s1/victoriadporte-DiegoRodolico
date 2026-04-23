@@ -1,0 +1,10 @@
+import disciplinas.*
+
+describe "probamos que las disciplinas nos saben decir su presupuesto base" {
+  test "tenis al inicio vale 215" {
+    assert.equals(215, tenis.presupuesto())
+  }
+  test "judo al inicio vale 480" {
+    assert.equals(480, judo.presupuesto())
+  }
+}

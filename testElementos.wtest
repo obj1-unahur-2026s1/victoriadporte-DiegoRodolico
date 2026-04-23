@@ -1,0 +1,15 @@
+import atleta.*
+import elementos.*
+
+describe "probamos los elementos funciones" {
+  test "si victoria tiene 32 años, entonces la raqueta vale 3000" {
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    victoria.cumplir_anios()
+    assert.equals(3000, raqueta.valor(victoria))
+  }
+}
